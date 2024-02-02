@@ -3,14 +3,22 @@
 [d edition pro ]
 [d chip 18F57Q43 ]
 [d frameptr 1249 ]
-"58 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\main.c
+"43 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\main.c
 [e E17452 . `uc
 SPI1_DEFAULT 0
 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fabsf.c
+[v _fabsf fabsf `(f  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
@@ -19,6 +27,12 @@ SPI1_DEFAULT 0
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nanf.c
+[v _nanf nanf `(f  1 e 4 0 ]
+"53 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\powf.c
+[v _powf powf `JJ(f  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\scalbnf.c
+[v _scalbnf scalbnf `(f  1 e 4 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -27,11 +41,17 @@ SPI1_DEFAULT 0
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
+"22 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sqrtf.c
+[v _sqrtf sqrtf `(f  1 e 4 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 "39 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\main.c
+[v _sendData sendData `(v  1 e 1 0 ]
+"55
 [v _main main `(i  1 e 2 0 ]
 "70 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/spi/src/spi1.c
 [v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
@@ -318,7 +338,7 @@ SPI1_DEFAULT 0
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
 "49047
 [v _LATD LATD `VEuc  1 e 1 @1217 ]
-[s S632 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S633 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -328,10 +348,10 @@ SPI1_DEFAULT 0
 `uc 1 LATD7 1 0 :1:7 
 ]
 "49064
-[u S641 . 1 `S632 1 . 1 0 ]
+[u S642 . 1 `S633 1 . 1 0 ]
 "49064
 "49064
-[v _LATDbits LATDbits `VES641  1 e 1 @1217 ]
+[v _LATDbits LATDbits `VES642  1 e 1 @1217 ]
 "49109
 [v _LATE LATE `VEuc  1 e 1 @1218 ]
 "49141
@@ -340,6 +360,20 @@ SPI1_DEFAULT 0
 [v _TRISA TRISA `VEuc  1 e 1 @1222 ]
 "49265
 [v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+[s S656 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"49282
+[u S665 . 1 `S656 1 . 1 0 ]
+"49282
+"49282
+[v _TRISBbits TRISBbits `VES665  1 e 1 @1223 ]
 "49327
 [v _TRISC TRISC `VEuc  1 e 1 @1224 ]
 [s S125 . 1 `uc 1 TRISC0 1 0 :1:0 
@@ -362,6 +396,20 @@ SPI1_DEFAULT 0
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
 "49483
 [v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+[s S677 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"49624
+[u S686 . 1 `S677 1 . 1 0 ]
+"49624
+"49624
+[v _PORTBbits PORTBbits `VES686  1 e 1 @1231 ]
 [s S338 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -379,6 +427,14 @@ SPI1_DEFAULT 0
 "49913
 "49913
 [v _INTCON0bits INTCON0bits `VES349  1 e 1 @1238 ]
+"3 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"20 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\powf.c
+[v _bp bp `C[2]f  1 s 8 bp ]
+"21
+[v _dp_h dp_h `C[2]f  1 s 8 dp_h ]
+"22
+[v _dp_l dp_l `C[2]f  1 s 8 dp_l ]
 [s S115 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
 "65 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/spi/src/spi1.c
 [v _spi1_configuration spi1_configuration `C[1]S115  1 s 5 spi1_configuration ]
@@ -388,12 +444,285 @@ SPI1_DEFAULT 0
 [v _INT1_InterruptHandler INT1_InterruptHandler `*.38(v  1 e 3 0 ]
 "40
 [v _INT2_InterruptHandler INT2_InterruptHandler `*.38(v  1 e 3 0 ]
-"39 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\main.c
+"55 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"54
-[v main@data data `uc  1 a 1 3 ]
-"71
+"70
+[v main@counter counter `uc  1 a 1 54 ]
+"73
+[v main@buttonState buttonState `a  1 a 1 53 ]
+"168
+} 0
+"39
+[v _sendData sendData `(v  1 e 1 0 ]
+{
+[v sendData@data data `uc  1 a 1 wreg ]
+"40
+[v sendData@index index `i  1 a 2 90 ]
+"39
+[v sendData@data data `uc  1 a 1 wreg ]
+[v sendData@time time `uc  1 p 1 48 ]
+"42
+[v sendData@data data `uc  1 a 1 89 ]
+"52
+} 0
+"85 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/spi/src/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 a 1 wreg ]
+[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 a 1 wreg ]
+"87
+[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 a 1 1 ]
+"99
+} 0
+"101
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+{
+"104
+} 0
+"106
+[v _SPI1_ByteExchange SPI1_ByteExchange `(uc  1 e 1 0 ]
+{
+[v SPI1_ByteExchange@data data `uc  1 a 1 wreg ]
+[v SPI1_ByteExchange@data data `uc  1 a 1 wreg ]
+"108
+[v SPI1_ByteExchange@data data `uc  1 a 1 0 ]
+"112
+} 0
+"37 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/timer/src/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(i  1 e 2 0 ]
+{
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
+"41
+} 0
+"53 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\powf.c
+[v _powf powf `JJ(f  1 e 4 0 ]
+{
+"155
+[v powf@s2 s2 `f  1 a 4 140 ]
+[v powf@s_h s_h `f  1 a 4 108 ]
+[v powf@t_h t_h `f  1 a 4 104 ]
+[v powf@t_l t_l `f  1 a 4 52 ]
+[v powf@s_l s_l `f  1 a 4 48 ]
+[u S1180 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
+"59
+[v powf@__xc8_float_word __xc8_float_word `S1180  1 a 4 184 ]
+"55
+[v powf@z z `f  1 a 4 180 ]
+"56
+[v powf@t t `f  1 a 4 176 ]
+"57
+[v powf@j j `l  1 a 4 172 ]
+"58
+[v powf@ix ix `l  1 a 4 168 ]
+"57
+[v powf@k k `l  1 a 4 160 ]
+"55
+[v powf@p_h p_h `f  1 a 4 156 ]
+"58
+[v powf@iy iy `l  1 a 4 152 ]
+[v powf@is is `l  1 a 4 144 ]
+"56
+[v powf@sn sn `f  1 a 4 136 ]
+"58
+[v powf@hy hy `l  1 a 4 132 ]
+"56
+[v powf@t1 t1 `f  1 a 4 128 ]
+"57
+[v powf@n n `l  1 a 4 124 ]
+"56
+[v powf@v v `f  1 a 4 120 ]
+[v powf@u u `f  1 a 4 116 ]
+"55
+[v powf@ax ax `f  1 a 4 112 ]
+[v powf@p_l p_l `f  1 a 4 100 ]
+"58
+[v powf@hx hx `l  1 a 4 96 ]
+"56
+[v powf@s s `f  1 a 4 92 ]
+"57
+[v powf@yisint yisint `l  1 a 4 80 ]
+"56
+[v powf@r r `f  1 a 4 76 ]
+[v powf@w w `f  1 a 4 68 ]
+"57
+[v powf@i i `l  1 a 4 44 ]
+"56
+[v powf@y1 y1 `f  1 a 4 40 ]
+"55
+[v powf@z_l z_l `f  1 a 4 36 ]
+[v powf@z_h z_h `f  1 a 4 32 ]
+"56
+[v powf@t2 t2 `f  1 a 4 28 ]
+"53
+[v powf@x x `f  1 p 4 36 ]
+[v powf@y y `f  1 p 4 40 ]
+"268
+} 0
+"22 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sqrtf.c
+[v _sqrtf sqrtf `(f  1 e 4 0 ]
+{
+"26
+[v sqrtf@ix ix `l  1 a 4 32 ]
+"27
+[v sqrtf@r r `ul  1 a 4 28 ]
+"26
+[v sqrtf@m m `l  1 a 4 24 ]
+"24
+[v sqrtf@z z `f  1 a 4 20 ]
+"26
+[v sqrtf@t t `l  1 a 4 16 ]
+[v sqrtf@q q `l  1 a 4 12 ]
+[u S1180 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
+"28
+[v sqrtf@__xc8_float_word __xc8_float_word `S1180  1 a 4 8 ]
+"26
+[v sqrtf@i i `l  1 a 4 4 ]
+[v sqrtf@s s `l  1 a 4 0 ]
+"22
+[v sqrtf@x x `f  1 p 4 61 ]
+"89
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nanf.c
+[v _nanf nanf `(f  1 e 4 0 ]
+{
+[u S1268 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v nanf@u u `S1268  1 a 4 4 ]
+"4
+[v nanf@s s `*.32Cuc  1 p 2 0 ]
+"9
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 49 ]
+[v ___flge@ff2 ff2 `d  1 p 4 53 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\scalbnf.c
+[v _scalbnf scalbnf `(f  1 e 4 0 ]
+{
+"7
+[v scalbnf@y y `f  1 a 4 55 ]
+[u S1268 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v scalbnf@u u `S1268  1 a 4 51 ]
+"4
+[v scalbnf@x x `f  1 p 4 41 ]
+[v scalbnf@n n `i  1 p 2 45 ]
+"31
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1045 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1050 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1053 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1045 1 fAsBytes 4 0 `S1050 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1053  1 a 4 35 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 29 ]
+[s S1121 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1124 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1121 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1124  1 a 2 39 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 34 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 33 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 28 ]
+"8
+[v ___flmul@b b `d  1 p 4 16 ]
+[v ___flmul@a a `d  1 p 4 20 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fabsf.c
+[v _fabsf fabsf `(f  1 e 4 0 ]
+{
+[u S1268 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v fabsf@u u `S1268  1 a 4 4 ]
+"4
+[v fabsf@x x `f  1 p 4 0 ]
+"5
+[v fabsf@F465 F465 `S1268  1 s 4 F465 ]
+"9
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"245 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 41 ]
+[v ___flsub@a a `d  1 p 4 45 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 15 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 14 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 13 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 12 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 68 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 61 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 66 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 73 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 72 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 65 ]
+"11
+[v ___fldiv@b b `d  1 p 4 49 ]
+[v ___fldiv@a a `d  1 p 4 53 ]
+"185
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 88 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 87 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 44 ]
+"70
 } 0
 "37 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -437,35 +766,6 @@ SPI1_DEFAULT 0
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 {
 "53
-} 0
-"85 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/spi/src/spi1.c
-[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
-{
-[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 a 1 wreg ]
-[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 a 1 wreg ]
-"87
-[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 a 1 1 ]
-"99
-} 0
-"101
-[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
-{
-"104
-} 0
-"106
-[v _SPI1_ByteExchange SPI1_ByteExchange `(uc  1 e 1 0 ]
-{
-[v SPI1_ByteExchange@data data `uc  1 a 1 wreg ]
-[v SPI1_ByteExchange@data data `uc  1 a 1 wreg ]
-"108
-[v SPI1_ByteExchange@data data `uc  1 a 1 0 ]
-"112
-} 0
-"37 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/timer/src/delay.c
-[v _DELAY_milliseconds DELAY_milliseconds `(i  1 e 2 0 ]
-{
-[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
-"41
 } 0
 "80 C:\Users\M70576\MPLABXProjects\ES\LED_64471_v2.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]

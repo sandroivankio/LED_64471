@@ -31,10 +31,24 @@
     THIS SOFTWARE.
 */
 #include "mcc_generated_files/system/system.h"
+#include <math.h>
 
-/*
-    Main application
-*/
+
+void sendData(uint8_t data, uint8_t time) {
+    int index;
+
+    for(index = 1; index <= 8; index++) {
+        SPI1_Open(SPI1_DEFAULT);
+        SPI1_ByteExchange(data);
+        SPI1_Close();
+        DELAY_milliseconds(5);
+        LE_SetHigh();
+        DELAY_milliseconds(20);
+        LE_SetLow();
+        DELAY_milliseconds(time);
+    }
+}
+
 
 int main(void)
 {
@@ -42,30 +56,50 @@ int main(void)
     
     SPI1_Initialize();
 
-    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts 
-    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts 
-    // Use the following macros to: 
-
-    // Enable the Global Interrupts 
-    //INTERRUPT_GlobalInterruptEnable(); 
-
-    // Disable the Global Interrupts 
-    //INTERRUPT_GlobalInterruptDisable(); 
-    uint8_t data=255;
-
+    uint8_t counter=0;
+    
+    SW_SetDigitalInput(); 
+    bool buttonState = 0;
+    OE1_SetHigh();
+    OE2_SetHigh();
+    LE_SetLow(); 
+    
+    sendData(0,20);
+    
+    
     while(1)
     {   
-       SPI1_Open(SPI1_DEFAULT); 
-       LE_SetLow(); 
-       SPI1_ByteExchange(data);
-       LE_SetHigh();
-       SPI1_Close();
-       OE_SetLow();
-       DELAY_milliseconds(100);
-       OE_SetHigh();
-       DELAY_milliseconds(500);
-       OE_SetLow();
-       DELAY_milliseconds(500);
-       OE_SetHigh();
-    }    
+        
+        if (SW_GetValue() == 0 && buttonState == 0) {
+            // Button is pressed, execute your sequence of instructions
+            
+            OE1_SetHigh();
+            OE2_SetHigh();
+                       
+            sendData(0,0);
+               OE1_SetLow();
+               OE2_SetLow();
+            
+            while (counter<=7){
+               sendData(pow(2,counter),200);
+               counter++;
+               SPI1_Close();
+             } 
+               
+               sendData(255,0);
+               OE1_SetLow();
+               OE2_SetLow();
+               counter = 0;
+        }     
+            
+            
+        else if (SW_GetValue() == 1 && buttonState == 1) {
+            // Button is released, reset button state
+           
+            buttonState = 0;
+        }
+
+    }
+    
+    return 0;
 }

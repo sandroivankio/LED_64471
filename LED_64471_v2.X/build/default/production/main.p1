@@ -1,18 +1,20 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"53 ./mcc_generated_files/system/system.h
-[; ;./mcc_generated_files/system/system.h: 53: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"65 ./mcc_generated_files/system/../spi/spi1.h
-[; ;./mcc_generated_files/system/../spi/spi1.h: 65: void SPI1_Initialize(void);
-[v _SPI1_Initialize `(v ~T0 @X0 0 ef ]
-"74
+"74 ./mcc_generated_files/system/../spi/spi1.h
 [; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open(uint8_t spiConfigIndex);
 [v _SPI1_Open `(a ~T0 @X0 0 ef1`uc ]
-"58 main.c
-[; ;main.c: 58:        SPI1_Open(SPI1_DEFAULT);
+"43 main.c
+[; ;main.c: 43:         SPI1_Open(SPI1_DEFAULT);
 [c E17452 0 .. ]
 [n E17452 . SPI1_DEFAULT  ]
+"90 ./mcc_generated_files/system/../spi/spi1.h
+[; ;./mcc_generated_files/system/../spi/spi1.h: 90: uint8_t SPI1_ByteExchange(uint8_t byteData);
+[v _SPI1_ByteExchange `(uc ~T0 @X0 0 ef1`uc ]
+"82
+[; ;./mcc_generated_files/system/../spi/spi1.h: 82: void SPI1_Close(void);
+[v _SPI1_Close `(v ~T0 @X0 0 ef ]
+"46 main.c
+[; ;main.c: 46:         DELAY_milliseconds(5);
+[v _DELAY_milliseconds `(i ~T0 @X0 0 e? ]
 "49053 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49053:     struct {
 [s S2288 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -24,15 +26,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49064
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49064: extern volatile LATDbits_t LATDbits __attribute__((address(0x4C1)));
 [v _LATDbits `VS2287 ~T0 @X0 0 e@1217 ]
-"90 ./mcc_generated_files/system/../spi/spi1.h
-[; ;./mcc_generated_files/system/../spi/spi1.h: 90: uint8_t SPI1_ByteExchange(uint8_t byteData);
-[v _SPI1_ByteExchange `(uc ~T0 @X0 0 ef1`uc ]
-"82
-[; ;./mcc_generated_files/system/../spi/spi1.h: 82: void SPI1_Close(void);
-[v _SPI1_Close `(v ~T0 @X0 0 ef ]
-"64 main.c
-[; ;main.c: 64:        DELAY_milliseconds(100);
-[v _DELAY_milliseconds `(i ~T0 @X0 0 e? ]
+[p mainexit ]
+"53 ./mcc_generated_files/system/system.h
+[; ;./mcc_generated_files/system/system.h: 53: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"65 ./mcc_generated_files/system/../spi/spi1.h
+[; ;./mcc_generated_files/system/../spi/spi1.h: 65: void SPI1_Initialize(void);
+[v _SPI1_Initialize `(v ~T0 @X0 0 ef ]
+"49271 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49271:     struct {
+[s S2296 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2296 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"49270
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49270: typedef union {
+[u S2295 `S2296 1 ]
+[n S2295 . . ]
+"49282
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49282: extern volatile TRISBbits_t TRISBbits __attribute__((address(0x4C7)));
+[v _TRISBbits `VS2295 ~T0 @X0 0 e@1223 ]
+"49613
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49613:     struct {
+[s S2308 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2308 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"49612
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49612: typedef union {
+[u S2307 `S2308 1 ]
+[n S2307 . . ]
+"49624
+[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 49624: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x4CF)));
+[v _PORTBbits `VS2307 ~T0 @X0 0 e@1231 ]
+[v F17827 `(f ~T0 @X0 1 tf2`f`f ]
+"324 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\math.h
+[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\math.h: 324: __attribute__((nonreentrant)) float powf(float, float);
+[v _powf `JF17827 ~T0 @X0 0 e ]
 "328 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 328: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2604,98 +2630,233 @@ Version 4.0 HI-TECH Software Intermediate Code
 "51171
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-Q_DFP/1.20.405/xc8\pic\include\proc\pic18f57q43.h: 51171: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-[v $root$_main `(v ~T0 @X0 0 e ]
 "39 main.c
-[; ;main.c: 39: int main(void)
-[v _main `(i ~T0 @X0 1 ef ]
-"40
-[; ;main.c: 40: {
+[; ;main.c: 39: void sendData(uint8_t data, uint8_t time) {
+[v _sendData `(v ~T0 @X0 1 ef2`uc`uc ]
 {
-[e :U _main ]
+[e :U _sendData ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[v _time `uc ~T0 @X0 1 r2 ]
 [f ]
-"41
-[; ;main.c: 41:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
+"40
+[; ;main.c: 40:     int index;
+[v _index `i ~T0 @X0 1 a ]
+"42
+[; ;main.c: 42:     for(index = 1; index <= 8; index++) {
+{
+[e = _index -> 1 `i ]
+[e $ <= _index -> 8 `i 2417  ]
+[e $U 2418  ]
+[e :U 2417 ]
+{
 "43
-[; ;main.c: 43:     SPI1_Initialize();
-[e ( _SPI1_Initialize ..  ]
-"54
-[; ;main.c: 54:     uint8_t data=255;
-[v _data `uc ~T0 @X0 1 a ]
-[e = _data -> -> 255 `i `uc ]
-"56
-[; ;main.c: 56:     while(1)
-[e :U 2418 ]
-"57
-[; ;main.c: 57:     {
-{
-"58
-[; ;main.c: 58:        SPI1_Open(SPI1_DEFAULT);
+[; ;main.c: 43:         SPI1_Open(SPI1_DEFAULT);
 [e ( _SPI1_Open (1 -> . `E17452 0 `uc ]
-"59
-[; ;main.c: 59:        do { LATDbits.LATD0 = 0; } while(0);
-[e :U 2422 ]
-{
-[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
-}
-[e :U 2421 ]
-"60
-[; ;main.c: 60:        SPI1_ByteExchange(data);
+"44
+[; ;main.c: 44:         SPI1_ByteExchange(data);
 [e ( _SPI1_ByteExchange (1 _data ]
-"61
-[; ;main.c: 61:        do { LATDbits.LATD0 = 1; } while(0);
-[e :U 2425 ]
+"45
+[; ;main.c: 45:         SPI1_Close();
+[e ( _SPI1_Close ..  ]
+"46
+[; ;main.c: 46:         DELAY_milliseconds(5);
+[e ( _DELAY_milliseconds -> 5 `i ]
+"47
+[; ;main.c: 47:         do { LATDbits.LATD0 = 1; } while(0);
+[e :U 2422 ]
 {
 [e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
 }
+[e :U 2421 ]
+"48
+[; ;main.c: 48:         DELAY_milliseconds(20);
+[e ( _DELAY_milliseconds -> 20 `i ]
+"49
+[; ;main.c: 49:         do { LATDbits.LATD0 = 0; } while(0);
+[e :U 2425 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
 [e :U 2424 ]
-"62
-[; ;main.c: 62:        SPI1_Close();
-[e ( _SPI1_Close ..  ]
-"63
-[; ;main.c: 63:        do { LATDbits.LATD1 = 0; } while(0);
-[e :U 2428 ]
-{
-[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+"50
+[; ;main.c: 50:         DELAY_milliseconds(time);
+[e ( _DELAY_milliseconds -> _time `i ]
+"51
+[; ;main.c: 51:     }
 }
-[e :U 2427 ]
-"64
-[; ;main.c: 64:        DELAY_milliseconds(100);
-[e ( _DELAY_milliseconds -> 100 `i ]
-"65
-[; ;main.c: 65:        do { LATDbits.LATD1 = 1; } while(0);
-[e :U 2431 ]
-{
-[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[e ++ _index -> 1 `i ]
+[e $ <= _index -> 8 `i 2417  ]
+[e :U 2418 ]
 }
-[e :U 2430 ]
-"66
-[; ;main.c: 66:        DELAY_milliseconds(500);
-[e ( _DELAY_milliseconds -> 500 `i ]
-"67
-[; ;main.c: 67:        do { LATDbits.LATD1 = 0; } while(0);
-[e :U 2434 ]
-{
-[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
-}
-[e :U 2433 ]
-"68
-[; ;main.c: 68:        DELAY_milliseconds(500);
-[e ( _DELAY_milliseconds -> 500 `i ]
-"69
-[; ;main.c: 69:        do { LATDbits.LATD1 = 1; } while(0);
-[e :U 2437 ]
-{
-[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
-}
-[e :U 2436 ]
-"70
-[; ;main.c: 70:     }
-}
-[e :U 2417 ]
-[e $U 2418  ]
-[e :U 2419 ]
-"71
-[; ;main.c: 71: }
+"52
+[; ;main.c: 52: }
 [e :UE 2416 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"55
+[; ;main.c: 55: int main(void)
+[v _main `(i ~T0 @X0 1 ef ]
+"56
+[; ;main.c: 56: {
+{
+[e :U _main ]
+[f ]
+"57
+[; ;main.c: 57:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
+"59
+[; ;main.c: 59:     SPI1_Initialize();
+[e ( _SPI1_Initialize ..  ]
+"70
+[; ;main.c: 70:      uint8_t counter=0;
+[v _counter `uc ~T0 @X0 1 a ]
+[e = _counter -> -> 0 `i `uc ]
+"72
+[; ;main.c: 72:     do { TRISBbits.TRISB4 = 1; } while(0);
+[e :U 2429 ]
+{
+[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 2428 ]
+"73
+[; ;main.c: 73:     _Bool buttonState = 0;
+[v _buttonState `a ~T0 @X0 1 a ]
+[e = _buttonState -> -> 0 `i `a ]
+"74
+[; ;main.c: 74:     do { LATDbits.LATD1 = 1; } while(0);
+[e :U 2432 ]
+{
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 2431 ]
+"75
+[; ;main.c: 75:     do { LATDbits.LATD2 = 1; } while(0);
+[e :U 2435 ]
+{
+[e = . . _LATDbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 2434 ]
+"76
+[; ;main.c: 76:     do { LATDbits.LATD0 = 0; } while(0);
+[e :U 2438 ]
+{
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 2437 ]
+"89
+[; ;main.c: 89:     sendData(0,20);
+[e ( _sendData (2 , -> -> 0 `i `uc -> -> 20 `i `uc ]
+"92
+[; ;main.c: 92:     while(1)
+[e :U 2440 ]
+"93
+[; ;main.c: 93:     {
+{
+"95
+[; ;main.c: 95:         if (PORTBbits.RB4 == 0 && buttonState == 0) {
+[e $ ! && == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _buttonState `i -> 0 `i 2442  ]
+{
+"98
+[; ;main.c: 98:             do { LATDbits.LATD1 = 1; } while(0);
+[e :U 2445 ]
+{
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 2444 ]
+"99
+[; ;main.c: 99:             do { LATDbits.LATD2 = 1; } while(0);
+[e :U 2448 ]
+{
+[e = . . _LATDbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 2447 ]
+"112
+[; ;main.c: 112:             sendData(0,0);
+[e ( _sendData (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"113
+[; ;main.c: 113:                do { LATDbits.LATD1 = 0; } while(0);
+[e :U 2451 ]
+{
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 2450 ]
+"114
+[; ;main.c: 114:                do { LATDbits.LATD2 = 0; } while(0);
+[e :U 2454 ]
+{
+[e = . . _LATDbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 2453 ]
+"116
+[; ;main.c: 116:             while (counter<=7){
+[e $U 2455  ]
+[e :U 2456 ]
+{
+"130
+[; ;main.c: 130:                sendData(powf(2,counter),200);
+[e ( _sendData (2 , -> ( _powf (2 , -> -> 2 `i `f -> _counter `f `uc -> -> 200 `i `uc ]
+"131
+[; ;main.c: 131:                counter++;
+[e ++ _counter -> -> 1 `i `uc ]
+"132
+[; ;main.c: 132:                SPI1_Close();
+[e ( _SPI1_Close ..  ]
+"137
+[; ;main.c: 137:          }
+}
+[e :U 2455 ]
+"116
+[; ;main.c: 116:             while (counter<=7){
+[e $ <= -> _counter `i -> 7 `i 2456  ]
+[e :U 2457 ]
+"151
+[; ;main.c: 151:                sendData(255,0);
+[e ( _sendData (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
+"152
+[; ;main.c: 152:                do { LATDbits.LATD1 = 0; } while(0);
+[e :U 2460 ]
+{
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 2459 ]
+"153
+[; ;main.c: 153:                do { LATDbits.LATD2 = 0; } while(0);
+[e :U 2463 ]
+{
+[e = . . _LATDbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 2462 ]
+"155
+[; ;main.c: 155:             counter = 0;
+[e = _counter -> -> 0 `i `uc ]
+"156
+[; ;main.c: 156:         }
+}
+[e $U 2464  ]
+"159
+[; ;main.c: 159:         else if (PORTBbits.RB4 == 1 && buttonState == 1) {
+[e :U 2442 ]
+[e $ ! && == -> . . _PORTBbits 0 4 `i -> 1 `i == -> _buttonState `i -> 1 `i 2465  ]
+{
+"162
+[; ;main.c: 162:             buttonState = 0;
+[e = _buttonState -> -> 0 `i `a ]
+"163
+[; ;main.c: 163:         }
+}
+[e :U 2465 ]
+[e :U 2464 ]
+"165
+[; ;main.c: 165:     }
+}
+[e :U 2439 ]
+[e $U 2440  ]
+[e :U 2441 ]
+"167
+[; ;main.c: 167:     return 0;
+[e ) -> 0 `i ]
+[e $UE 2426  ]
+"168
+[; ;main.c: 168: }
+[e :UE 2426 ]
 }

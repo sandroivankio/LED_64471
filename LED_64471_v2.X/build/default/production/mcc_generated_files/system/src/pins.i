@@ -29242,7 +29242,7 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 2 3
 # 38 "mcc_generated_files/system/src/../pins.h" 2
-# 158 "mcc_generated_files/system/src/../pins.h"
+# 198 "mcc_generated_files/system/src/../pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -29264,7 +29264,7 @@ void PIN_MANAGER_Initialize(void)
     LATA = 0x0;
     LATB = 0x0;
     LATC = 0x0;
-    LATD = 0x2;
+    LATD = 0x6;
     LATE = 0x0;
     LATF = 0x0;
 
@@ -29274,7 +29274,7 @@ void PIN_MANAGER_Initialize(void)
     TRISA = 0xFF;
     TRISB = 0xFF;
     TRISC = 0xDF;
-    TRISD = 0xFC;
+    TRISD = 0xF8;
     TRISE = 0xF;
     TRISF = 0xFF;
 
@@ -29282,9 +29282,9 @@ void PIN_MANAGER_Initialize(void)
 
 
     ANSELA = 0xFF;
-    ANSELB = 0xFF;
+    ANSELB = 0xEF;
     ANSELC = 0xC7;
-    ANSELD = 0xFC;
+    ANSELD = 0xF8;
     ANSELE = 0x7;
     ANSELF = 0xFF;
 
@@ -29292,7 +29292,7 @@ void PIN_MANAGER_Initialize(void)
 
 
     WPUA = 0x0;
-    WPUB = 0x0;
+    WPUB = 0x10;
     WPUC = 0x0;
     WPUD = 0x0;
     WPUE = 0x0;
